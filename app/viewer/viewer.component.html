@@ -1,0 +1,35 @@
+
+
+<div>
+  <br>
+    <mat-card>
+      <section class="mat">
+        <h3>Viewers</h3>
+      </section>
+
+      <mat-divider></mat-divider>
+      <br>
+      <form [formGroup]="createForm" class="create-form">
+        <mat-form-field class="field">
+          <input matInput placeholder="v_id" formControlName="vid" #vid>
+        </mat-form-field>
+
+        <mat-form-field class="field">
+          <input type="text" matInput placeholder="Viewer name" formControlName="v_name" #v_name>
+        </mat-form-field>
+        <mat-form-field class="field">
+
+            <input type="number" matInput placeholder="Mobile number" maxlength="10" minlength="10" formControlName="v_mob_no" #v_mob_no>
+          </mat-form-field>
+          <mat-form-field class="field">
+
+            <input type="text" matInput placeholder="Address" formControlName="v_address" #v_address>
+          </mat-form-field>
+        <mat-divider></mat-divider>
+        <br><br>
+          <button class="but" type="submit" (click)="addView(vid, v_name, v_mob_no, v_address)"
+          [disabled]="createForm.pristine || createForm.invalid" mat-raised-button color="primary">Save</button>
+
+      </form>
+    </mat-card>
+

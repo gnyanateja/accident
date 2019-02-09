@@ -1,0 +1,35 @@
+
+
+<div>
+    <br>
+      <mat-card>
+        <section class="mat">
+          <h3>Police</h3>
+        </section>
+
+        <mat-divider></mat-divider>
+        <br>
+        <form [formGroup]="createForm" class="create-form">
+
+          <mat-form-field class="field">
+            <input matInput placeholder="police id" formControlName="p_id" #p_id required>
+          </mat-form-field>
+
+          <mat-form-field class="field">
+            <input type="text" matInput placeholder="police name" formControlName="p_name" #p_name required>
+          </mat-form-field>
+          <mat-form-field class="field">
+              <input type="text" matInput placeholder="Mobile number" [maxLength]=[10] formControlName="p_mob_no" #p_mob_no required>
+            </mat-form-field>
+            <mat-form-field class="field">
+
+              <input type="text" matInput placeholder="location" formControlName="p_location" #p_location>
+            </mat-form-field>
+          <mat-divider></mat-divider>
+          <br><br>
+            <button class="but" type="submit" (click)="addPolice(p_id, p_name, p_mob_no,p_location)"
+            [disabled]="createForm.pristine || createForm.invalid" mat-raised-button color="primary">Save</button>
+
+        </form>
+      </mat-card>
+

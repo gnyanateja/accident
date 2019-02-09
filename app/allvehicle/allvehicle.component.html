@@ -1,0 +1,26 @@
+<br><br><br>
+<div>
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Accident Id</th>
+          <th scope="col">Vehicle Regestration No</th>
+          <th scope="col">Vehicle Owner name</th>
+          <th scope="col">Vehicle Name</th>
+          <th scope="col">Vehicle type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let record of vehicle; let myIndex = index;">
+          <th scope="row">{{myIndex + 1}}</th>
+          <td><a [routerLink]="['/list',record.ve_accident_id]">{{record.ve_accident_id}}</a></td>
+          <td>{{record.ve_reg_no}}</td>
+          <td>{{record.ve_owner_name}}</td>
+          <td>{{record.ve_name}}</td>
+          <td>{{record.ve_type}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>

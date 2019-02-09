@@ -1,0 +1,42 @@
+body{
+
+  overflow-x: hidden;
+}
+#fir1{
+  position: relative;
+  left: 28%;
+}
+
+#tab1 {
+  position: relative;
+  left: 9%;
+  font-size: 100%;
+}
+
+
+#btt1 {
+  font-size: 100%
+}
+
+.card {
+  width: 60%;
+  position: relative;
+  left: 20%;
+}
+
+#btcard {
+font-size: 70%;
+}
+#row1 {
+font-size: 120%;
+}
+
+#col10 {
+  position: relative;
+  left: 6%;
+}
+
+#col11 {
+  position: relative;
+  left: 20%;
+}

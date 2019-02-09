@@ -1,0 +1,24 @@
+<br><br><br>
+<div>
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Accident Id</th>
+          <th scope="col">Street No</th>
+          <th scope="col">Street Name</th>
+          <th scope="col">location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let record of streets;  let myIndex = index;">
+          <th scope="row">{{myIndex + 1}}</th>
+          <td><a [routerLink]="['/list',record.s_accident_id]">{{record.s_accident_id}}</a></td>
+          <td>{{record.s_no}}</td>
+          <td>{{record.s_name}}</td>
+          <td>{{record.location}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>

@@ -1,0 +1,256 @@
+<body class="body">
+<div>
+  <br>
+    <mat-card>
+      <section class="mat">
+        <h3>Victim</h3>
+      </section>
+
+      <mat-divider></mat-divider>
+      <br>
+      <form [formGroup]="createForm" class="create-form">
+        <mat-form-field class="field">
+          <input matInput placeholder="Victim id" formControlName="accident_id" #accident_id required>
+        </mat-form-field>
+<br><br>
+        <mat-form-field class="field">
+          <input type="text" matInput placeholder="License Number" formControlName="license_no" #license_no required>
+        </mat-form-field>
+        <br><br>
+        <mat-form-field class="field">
+          <input matInput placeholder="Name" formControlName="name" #name required>
+        </mat-form-field>
+        <br><br>
+        <mat-form-field class="field">
+          <input type="text" matInput placeholder="Sex" formControlName="sex" #sex required>
+        </mat-form-field>
+        <br><br>
+        <mat-form-field class="field">
+          <input type="number" matInput placeholder="Age" formControlName="age" #age required>
+        </mat-form-field>
+        <br><br>
+
+        <mat-form-field class="field">
+
+            <input type="text" matInput placeholder="Cause of Accident"  formControlName="caused_the_accident" #caused_the_accident required>
+          </mat-form-field>
+          <br><br>
+          <mat-form-field class="field">
+
+            <input type="text" matInput placeholder="Having helmet or SeatBelt" formControlName="safety_belt_or_helmet" #safety_belt_or_helmet required>
+          </mat-form-field>
+        <mat-divider></mat-divider>
+        <br><br>
+      </form>
+    </mat-card>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+      <br>
+        <mat-card>
+          <section class="mat">
+            <h3>Vehicles</h3>
+          </section>
+
+          <mat-divider></mat-divider>
+          <br>
+          <form [formGroup]="createForm" class="create-form">
+            <mat-form-field class="field">
+              <input matInput placeholder="Registration No" formControlName="ve_reg_no" #ve_reg_no required>
+            </mat-form-field>
+
+            <mat-form-field class="field">
+              <input type="text" matInput placeholder="Vehicle Owner name" formControlName="ve_owner_name" #ve_owner_name required>
+            </mat-form-field>
+
+            <mat-form-field class="field">
+                <input type="text" matInput placeholder="Vehicle name" formControlName="ve_name" #ve_name required>
+              </mat-form-field>
+
+              <mat-form-field class="field">
+                <input type="text" matInput placeholder="Vehicle Type" formControlName="ve_type" #ve_type required>
+              </mat-form-field>
+            <mat-divider></mat-divider>
+            <br><br>
+
+          </form>
+        </mat-card>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+  <br>
+    <mat-card>
+      <section class="mat">
+        <h3>Viewers</h3>
+      </section>
+
+      <mat-divider></mat-divider>
+      <br>
+      <form [formGroup]="createForm" class="create-form">
+        <mat-form-field class="field">
+          <input matInput placeholder="v_id" formControlName="vid" #vid required>
+        </mat-form-field>
+
+        <mat-form-field class="field">
+          <input type="text" matInput placeholder="Viewer name" formControlName="v_name" #v_name required>
+        </mat-form-field>
+        <mat-form-field class="field">
+
+            <input type="text" matInput placeholder="Mobile number" [maxLength]=[10] formControlName="v_mob_no" #v_mob_no required>
+          </mat-form-field>
+          <mat-form-field class="field">
+
+            <input type="text" matInput placeholder="Address" formControlName="v_address" #v_address required>
+          </mat-form-field>
+        <mat-divider></mat-divider>
+        <br><br>
+
+      </form>
+    </mat-card>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+  <br>
+    <mat-card>
+      <section class="mat">
+        <h3>Police</h3>
+      </section>
+
+      <mat-divider></mat-divider>
+      <br>
+      <form [formGroup]="createForm" class="create-form">
+
+        <mat-form-field class="field">
+          <input matInput placeholder="police id" formControlName="p_id" #p_id required>
+        </mat-form-field>
+
+        <mat-form-field class="field">
+          <input type="text" matInput placeholder="police name" formControlName="p_name" #p_name required>
+        </mat-form-field>
+        <mat-form-field class="field">
+            <input type="text" matInput placeholder="Mobile number" [maxlength]=[10] formControlName="p_mob_no" #p_mob_no required>
+          </mat-form-field>
+          <mat-form-field class="field">
+
+            <input type="text" matInput placeholder="location" formControlName="p_location" #p_location required>
+          </mat-form-field>
+        <mat-divider></mat-divider>
+        <br><br>
+
+      </form>
+    </mat-card>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<div>
+  <br>
+    <mat-card>
+      <section class="mat">
+        <h3>Street</h3>
+      </section>
+
+      <mat-divider></mat-divider>
+      <br>
+      <form [formGroup]="createForm" class="create-form">
+
+        <mat-form-field class="field">
+          <input type="text" matInput placeholder="Street Number" formControlName="s_no" #s_no required>
+        </mat-form-field>
+        <br><br>
+        <mat-form-field class="field">
+          <input matInput placeholder="Street Name" formControlName="s_name" #s_name required>
+        </mat-form-field>
+        <br><br>
+        <mat-form-field class="field">
+          <input type="text" matInput placeholder="Location" formControlName="location" #location required>
+        </mat-form-field>
+        <br><br>
+        <mat-form-field class="field">
+          <input matInput placeholder="Latitude" formControlName="glat" #glat required>
+        </mat-form-field>
+        <br><br>
+
+        <mat-form-field class="field">
+
+            <input type="text" matInput placeholder="Longitude"  formControlName="glong" #glong required>
+          </mat-form-field>
+
+        <mat-divider></mat-divider>
+        <br><br>
+
+        <button class="but" type="submit" (click)="addPersons()"
+        [disabled]="createForm.pristine || createForm.invalid" mat-raised-button color="primary">Save</button>
+
+
+      </form>
+    </mat-card>
+</div>
+</body>
+
+
+
+
+
+
+
+

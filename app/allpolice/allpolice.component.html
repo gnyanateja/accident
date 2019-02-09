@@ -1,0 +1,26 @@
+<br><br><br>
+<div>
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Accident Id</th>
+          <th scope="col">Police id</th>
+          <th scope="col">Police name</th>
+          <th scope="col">Police Mobile No</th>
+          <th scope="col">Police Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let record of polices; let myIndex = index;">
+          <th scope="row">{{myIndex + 1}}</th>
+          <td><a [routerLink]="['/list',record.p_accident_id]">{{record.p_accident_id}}</a></td>
+          <td>{{record.p_id}}</td>
+          <td>{{record.p_name}}</td>
+          <td>{{record.p_mob_no}}</td>
+          <td>{{record.p_location}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>

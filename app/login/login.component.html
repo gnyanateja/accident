@@ -1,0 +1,32 @@
+
+
+<div class="body">
+    <br>
+      <mat-card>
+        <section class="mat">
+          <h3>Login</h3>
+        </section>
+        <section class="mat">
+            <p class="lead">Not a member? Please <a href="../register/">Sign up</a> instead.</p>
+          </section>
+        <mat-divider></mat-divider>
+        <br>
+        <form [formGroup]="createForm" class="create-form">
+
+          <mat-form-field class="field">
+                  <input matInput placeholder="username" formControlName="username" #username required>
+            </mat-form-field>
+
+            <mat-form-field class="field">
+              <input type="password" matInput placeholder="password" formControlName="password" #password required>
+            </mat-form-field>
+          <mat-divider></mat-divider>
+          <br><br>
+            <button class="but" type="submit" (click)="getlogged()"
+            [disabled]="createForm.pristine || createForm.invalid" mat-raised-button color="primary">Save</button>
+
+        </form>
+      </mat-card>
+      </div>
+
+

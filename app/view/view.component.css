@@ -1,0 +1,65 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+#hd2 {
+  position: relative;
+  left: 20%;
+  color: crimson;
+}
+
+#z1 {
+  position: relative;
+  left: 12%;
+}
+
+#img1 {
+position: relative;
+left: 5%
+}
+
+#forz{
+  z-index: 100;
+}
+
+#it1 {
+position: relative;
+left: -10%;
+}
+
+#it2 {
+  position: relative;
+  right:10.5%;
+  }
+
+#it3 {
+  position: relative;
+  right: -10%;
+  }
+
+#cd1{
+  border: none;
+}
+
+#cd2{
+  border: none;
+}
+
+#cd3{
+  border: none;
+}
+
+  #chart{
+    position: relative;
+    left: -5%;
+    z-index: -10;
+
+  }
+
+  #mdbd{
+    position: relative;
+    left: 10%;
+  }
